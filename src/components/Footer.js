@@ -3,7 +3,9 @@ function Footer() {
     <footer>
       <nav>
         <ul>
-          <li>Doormat Navigation</li>
+          <li>
+            <span>Doormat Navigation</span>
+          </li>
           <li>
             <a href="/home">Home</a>
           </li>
@@ -26,7 +28,9 @@ function Footer() {
       </nav>
       <nav>
         <ul>
-          <li>Contact</li>
+          <li>
+            <span>Contact</span>
+          </li>
           <li>
             <a href="/address">Address</a>
           </li>
@@ -40,7 +44,9 @@ function Footer() {
       </nav>
       <nav>
         <ul>
-          <li>Social Media Links</li>
+          <li>
+            <span>Social Media Links</span>
+          </li>
           <li>
             <a href="/facebook">Facebook</a>
           </li>

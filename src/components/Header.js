@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <img src={Logo} alt="Little Lemon logo" />
-      <nav>
+      <nav className="header-navbar">
         <ul>
           <li>
             <a href="/home">Home</a>
