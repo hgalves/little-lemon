@@ -91,5 +91,54 @@ nav.header-navbar > ul {
 }
 
 img {
-  border-radius: 4px;
+  border-radius: 8px;
+}
+
+main {
+  width: 100%;
+}
+
+.cta--container {
+  background-color: #495e57;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 150px;
+}
+
+.cta--info {
+  padding-top: 30px;
+}
+
+h1.title-restaurant {
+  font-size: 40px;
+  line-height: unset;
+  color: #f4ce14;
+}
+
+h2.subtitle-restaurant {
+  font-size: 30px;
+  line-height: 0.1;
+  color: white;
+}
+
+p.cta--text {
+  color: white;
+  font-size: 16px;
+  padding: 20px 0;
+  max-width: 270px;
+}
+
+.btn {
+  background-color: #f4ce14;
+  font-weight: 700;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.cta--image {
+  margin-top: 20px;
 }
