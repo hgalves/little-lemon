@@ -258,3 +258,10 @@ p.desc--text {
   font-size: 16px;
   padding: 12px 0;
 }
+
+.booking-page--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
