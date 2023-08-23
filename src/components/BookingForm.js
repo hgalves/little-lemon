@@ -1,10 +1,7 @@
 import { useState } from "react";
 
-const BookingForm = () => {
+const BookingForm = (props) => {
   const [formData, setFormData] = useState({});
-  const [availableTimes, setAvailableTimes] = useState([
-    17, 18, 19, 20, 21, 22,
-  ]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -26,9 +23,12 @@ const BookingForm = () => {
           id="res-time"
           name="time"
           value={formData["time"] || ""}
-          onChange={handleChange}>
-          {availableTimes.map((time) => (
-            <option key={time}>{`${time}:00`}</option>
+          onChange={(e) => {
+            handleChange(e);
+            props.dispatch({ type: "selected", value: e.target.value });
+          }}>
+          {props.availableTimes().map((time) => (
+            <option key={time}>{time}</option>
           ))}
         </select>
         <label htmlFor="guests">Number of guests</label>
