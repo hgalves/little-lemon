@@ -23,7 +23,10 @@ function Main() {
         <Route
           path="/booking"
           element={
-            <BookingPage availableTimes={availableTimes} dispatch={dispatch} />
+            <BookingPage
+              availableTimes={availableTimes()}
+              dispatch={dispatch}
+            />
           }
         />
       </Routes>

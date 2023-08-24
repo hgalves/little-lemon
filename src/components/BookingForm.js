@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const BookingForm = (props) => {
   const [formData, setFormData] = useState({});
@@ -9,6 +9,7 @@ const BookingForm = (props) => {
 
   return (
     <>
+      <h2>Book Now</h2>
       <form style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
         <label htmlFor="res-date">Choose date</label>
         <input
@@ -27,9 +28,10 @@ const BookingForm = (props) => {
             handleChange(e);
             props.dispatch({ type: "selected", value: e.target.value });
           }}>
-          {props.availableTimes().map((time) => (
-            <option key={time}>{time}</option>
-          ))}
+          {props.availableTimes &&
+            props.availableTimes.map((time) => (
+              <option key={time}>{time}</option>
+            ))}
         </select>
         <label htmlFor="guests">Number of guests</label>
         <input
