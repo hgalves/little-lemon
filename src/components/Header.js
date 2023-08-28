@@ -10,7 +10,7 @@ function Header() {
       <nav className="header-navbar">
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -19,7 +19,7 @@ function Header() {
             <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <Link to="/reservations">Reservations</Link>
+            <Link to="/booking">Reservations</Link>
           </li>
           <li>
             <Link to="/order">Order Online</Link>

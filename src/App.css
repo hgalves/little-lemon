@@ -265,3 +265,9 @@ p.desc--text {
   justify-content: center;
   align-items: center;
 }
+
+.confirmed-message {
+  text-align: center;
+  font-size: larger;
+  padding: 50px;
+}

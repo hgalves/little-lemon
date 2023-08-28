@@ -53,7 +53,14 @@ const BookingForm = (props) => {
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation" />
+        <button
+          type="submit"
+          onClick={(e) => {
+            e.preventDefault();
+            props.submit(formData);
+          }}>
+          Make Your reservation
+        </button>
       </form>
     </>
   );

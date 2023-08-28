@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import RestaurantFood from "../assets/restauranfood.jpg";
 
 const CallToAction = () => {
+  const navigate = useNavigate();
+
+  const handleReserve = () => {
+    navigate("/booking");
+  };
+
   return (
     <>
       <div className="cta--container">
@@ -11,7 +18,9 @@ const CallToAction = () => {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <button className="btn">Reserve a Table</button>
+          <button className="btn" onClick={handleReserve}>
+            Reserve a Table
+          </button>
         </div>
         <div>
           <div className="cta--image">

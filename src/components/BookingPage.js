@@ -8,6 +8,7 @@ const BookingPage = (props) => {
         <BookingForm
           availableTimes={props.availableTimes}
           dispatch={props.dispatch}
+          submit={props.submit}
         />
       </div>
     </>
