@@ -16,5 +16,7 @@ test("Submit button is working", () => {
   const submitButton = screen.getByRole("button");
   fireEvent.click(submitButton);
 
-  expect(handle).toBeCalled();
+  const errorMsg = screen.getByText("Invalid values, please check the form.");
+
+  expect(errorMsg).toBeInTheDocument();
 });

@@ -271,3 +271,10 @@ p.desc--text {
   font-size: larger;
   padding: 50px;
 }
+
+.error-message {
+  background-color: #f1aaaa75;
+  padding: 5px 50px;
+  margin: 25px;
+  border-radius: 6px;
+}
