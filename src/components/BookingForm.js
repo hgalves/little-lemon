@@ -76,7 +76,7 @@ const BookingForm = (props) => {
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <button type="submit" onClick={handleSubmit}>
+        <button type="submit" aria-label="On Click" onClick={handleSubmit}>
           Make Your reservation
         </button>
       </form>
